@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Register | Visualized Analytics</title>
+    <link rel="icon" href="images/VisualizedAnalyticsFavicon.png">
+    <link rel="stylesheet" href="proj1style.css">
+    <script src="check.js"></script>
+
+
+<header>
+
+  <div class="landingHead">
+     <nav>
+          <p>Home → Pricing → Register ↓</p>
+          <ul>
+            <img src="images/VisualizedAnalyticsSmall.png" alt="logo">
+            <li><a href="login.html">LOGIN</a></li>
+            <li><a href="pricing.html">SUBSCRIBE</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr>
+</header>
+
+  </head>
+  <body>
+
+  <form action="" method="get" class="registerform">
+
+  <div class="container2" style="background-color:whitesmoke">
+        <h2 class="login_header">Register</h2>
+        </div>
+
+  <div class="container">
+    <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        
+        <br>
+
+    <label for="email"><b>E-mail Address</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+        <br>
+
+    <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pwd" id= "pwd" required>
+        
+        <br>
+
+    <label for="confirm_psw"><b>Confirm Password </b></label>
+        <input type="password" placeholder="Confirm Password" name="pwd2" id= "pwd2" required>
+        
+        <br>        
+
+        <button type="submit" class="login_submit" value="validate" onclick="pwdcheck(), emailcheck(), confirmcheck()">Register</button>
+
+        </div>
+    </form>
+
+    <p id = "result2"></p>
+    <p id = "result"></p>
+    <p id = "result3"></p>
+
+    <footer>
+
+    <div class="landingFooter">
+     <nav>
+          <ul>        
+            <li><a href="landing.html">HOME</a></li>
+            <li><a href="markets.html">MARKETS</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="terms.html">TERMS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      Copyright &copy; VisualizedAnalytics.com
+    </footer>
+  </body>
+</html>

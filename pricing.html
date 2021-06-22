@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pricing | Visualized Analytics</title>
+    <link rel="icon" href="images/VisualizedAnalyticsFavicon.png">
+    <link rel="stylesheet" href="proj1style.css">
+   <!-- <script src="check.js"></script> -->
+
+
+<header>
+
+  <div class="landingHead">
+     <nav>
+          <p>Home → Pricing ↓</p>
+          <ul>
+            <img src="images/VisualizedAnalyticsSmall.png" alt="logo">
+             <li><a href="login.html">LOGIN</a></li>
+            <li><a href="pricing.html">SUBSCRIBE</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr>
+</header>
+
+  <script type="text/javascript">
+    function enableBtn(){
+      if (document.getElementById("accept_checked").checked == true) {
+        
+        document.getElementById("termsCheck").disabled = false;
+        document.getElementById("termsCheck2").disabled = false;
+        document.getElementById("termsCheck3").disabled = false; 
+      }
+      else {
+          document.getElementById("termsCheck").disabled = true;
+          document.getElementById("termsCheck2").disabled = true;
+          document.getElementById("termsCheck3").disabled = true;
+        }
+}
+</script>
+
+  </head>
+  <body>
+
+  <div class="register1">
+    <h2 align="center">ONE DAY</h2>
+    <br>
+    <h1 align="center">$30</h1>
+    <button type="submit" class="day_subscribe" id=termsCheck onclick="window.location.href = 'register.html';" disabled>SUBSCRIBE</button>
+        </div>
+
+  <div class="register2">
+    <h2 align="center">QUARTER</h2>
+    <br>
+    <h1 align="center">$90</h1>
+    <button type="submit" class="quarter_subscribe" id=termsCheck2 onclick="window.location.href = 'register.html';" disabled>SUBSCRIBE</button>
+        </div>
+
+  <div class="register3">
+    <h2 align="center">YEAR</h2>
+    <br>
+    <h1 align="center">$290</h1>
+    <button type="submit" class="year_subscribe" id=termsCheck3 onclick="window.location.href = 'register.html';" disabled>SUBSCRIBE</button>
+  </div>
+
+  <div class ="accept">
+    <input type="checkbox" id="accept_checked" name="accept_terms" onclick="enableBtn()">
+    <label for="accept_checked">I have read & accept <a href="terms.html" target="_blank">Terms of Use</a></label>
+  </div>
+
+    <footer>
+
+    <div class="landingFooter">
+     <nav>
+          <ul>        
+            <li><a href="landing.html">HOME</a></li>
+            <li><a href="markets.html">MARKETS</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="terms.html">TERMS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      Copyright &copy; VisualizedAnalytics.com
+    </footer>
+  </body>
+</html>
